@@ -1,0 +1,50 @@
+<head>
+<center>
+  <B>
+    <font size="6">  Machine Learning - Guess The Type Of Music </font>
+  </B>
+</center>
+</head>
+
+<body>
+  <center>
+    <br />
+       
+       <br />
+    <img src="../static/HKUEdu.jpg" width="600">
+    <form method="POST">
+       <br />
+       
+       <br />
+       <table border="1" width="600">
+        <tr bgcolor="MediumAquamarine">
+          <td width="300">Age:</td><td> <input type="number" name="age" min="1" max="99"></td>
+        </tr>
+        <tr bgcolor="MediumAquamarine">
+          <td>Gender:(0 for female;1 for male)</td><td><input type="number" name="gender" min="0" max="1"></td>
+        </tr>
+        <tr>
+          <td>Academic-qualification:</td>
+          <td>
+            <select name="academic-qualification">
+             <option>degree</option>
+             <option selected>diploma</option>
+             <option>master</option>
+             <option>phd</option>
+            </select>
+          </td>
+        </tr>
+        <tr bgcolor="MediumAquamarine">
+          <td>Press The Button To Submit:</td><td><input type="submit"></td>
+        </tr>
+        <tr bgcolor="NavajoWhite">
+          <td colspan="2" align="center">The Result</td>
+        </tr>
+        <tr bgcolor="NavajoWhite">
+          <td colspan="2" align="center">&nbsp;<label>{{ href2 }} </label></td>
+        </tr>
+       </table>
+    </form>
+  </center>
+</body>
+

@@ -26,5 +26,5 @@ def hello_world():
         model, d = load(f"./app/music-recommender.joblib")
         dic = {d[0][i]:{a:b for a,b in zip(d[1][i][0],d[1][i][1])} for i in range(len(d[0]))}
         predictions = model.predict([[dic.get(i_,{x_:convert_(x_)}).get(x_, -1) for i_,x_ in enumerate([myage, mygender, academic_qualification])]])
-        return render_template('music.html', href2='The suitable music for you (age:'+str(myage)+' ,gender:'+str(mygender)+',academic qualification:'+str(academic_qualification)+') is:'+ str(predictions[0]))
+        return render_template('index.html', href2='The suitable music for you (age:'+str(myage)+' ,gender:'+str(mygender)+',academic qualification:'+str(academic_qualification)+') is:'+ str(predictions[0]))
 
